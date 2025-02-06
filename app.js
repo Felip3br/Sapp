@@ -3,8 +3,15 @@ let squads = [];
 // Load initial data
 document.addEventListener('DOMContentLoaded', () => {
     fetch('players.json')
-        .then(response => response.json())
-        .then(players => loadPlayers(players));
+        .then(response => {
+            if (!response.ok) throw new Error ('Network response was not ok');
+            return response.json();
+        })
+        .then(players => loadPlayers(players))
+        .catch(error => {
+            console.error('Error loading players:' , error);
+            alert('Error loading players - check console!');
+        });
 });
 
 function loadPlayers(players) {
