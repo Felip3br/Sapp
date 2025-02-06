@@ -1,10 +1,6 @@
 [
-    {"id": 1, "name": "Player 1"},
-    {"id": 2, "name": "Player 2"},
-    {"id": 3, "name": "Player 3"},
-    {"id": 4, "name": "Player 4"},
-    {"id": 5, "name": "Player 5"}
+    {"id": 1, "name": "Messi"},
+    {"id": 2, "name": "Ronaldo"},
+    {"id": 3, "name": "Mbappé"}
 ]
 
-    doc.save('squads-export.pdf');
-}
