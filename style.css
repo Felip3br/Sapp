@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.player {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: move;
+    border: 1px solid #ccc;
+}
+
+.squad-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.squad {
+    background: #e0e0ff;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 150px;
+    border: 2px solid #999;
+}
+
+.squad-header input {
+    width: 120px;
+    margin-bottom: 10px;
+}
